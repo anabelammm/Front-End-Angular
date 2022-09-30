@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+    background-image: url("./assets/Imagenes/diseño.png");
+    background-repeat: repeat;
+    animation: fondomovim 120s linear infinite;
+    }
+
+.barranav {
+    background-color: brown;
+    width: 100%; 
+}
+
+/*css de banner*/
+.banner {
+    background-image: url("./assets/Imagenes/geometric1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 99%;
+    margin: 5px auto;
+    border: brown 1.5px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+.tamañofoto {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: brown solid 1.5px;
+}
+.contenedor {
+   width: 100%;
+   margin: 0 auto;
+   height: 360px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.resto {
+    background-image: url("./assets/Imagenes/geometric2.jpg");
+    padding: 20px;
+}
+
+.contenedorchico {
+    width: 85%;
+    margin: 20px auto;
+    border: brown 1.5px solid;
+    border-radius: 10px;
+}
+
+.contenedorgrande {
+    width: 93%;
+    margin: 20px auto;
+    border: brown 1.5px solid;
+    border-radius: 10px;
+}
+
+.listacontacto {
+    list-style: none;
+}
+
+@media(max-width:480px) {
+.resto {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+}
+.tamañofoto {
+    width: 190px;
+    height: 190px;
+}
+}
+
+@keyframes fondomovim {
+    100%{
+        background-position-y: 1600px;
+    }
+}
